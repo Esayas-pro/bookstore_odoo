@@ -1,0 +1,16 @@
+<odoo>
+    <data>
+        <!-- Top menu item -->
+        <menuitem name="bookstore" id="bookstore_menu_root" web_icon="bookstore,static/description/icon.png"/>
+        <!-- menu categories -->
+        <menuitem name="Books" id="menu_bookstore_books" parent="bookstore_menu_root"/>
+        <!-- actions -->
+        <menuitem name="Books" id="bookstore_book" parent="menu_bookstore_books"
+                  action="bookstore_action_window"/>
+        <!--
+
+            <menuitem name="Server to list" id="bookstore" parent="bookstore.menu_2"
+                      action="bookstore.action_server"/>
+        -->
+    </data>
+</odoo>
